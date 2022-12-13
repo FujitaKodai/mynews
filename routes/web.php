@@ -13,6 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+/*
+課題３
+use App\Http\Controllers\Admin\AAAController
+Route::Controller(AAAController::class)->group()
+{
+    Route::get('XXX','bbb');
+}
+*/
+
+
+use App\Http\Controllers\Admin\NewsController;
+Route::controller(NewsController::class)->prefix('admin')->group(function() 
+{
+    Route::get('news/create','add');
+});
+
+/*課題４*/
+use App\Http\Controllers\Admin\ProfileController;
+Route::controller(ProfileController::class)->prefix('admin')->group(function()
+{
+    Route::get('profile/create','add');
+    Route::git('profile/edit','edit');
 });
