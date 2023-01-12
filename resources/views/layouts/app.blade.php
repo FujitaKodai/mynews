@@ -14,9 +14,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="{{ secure_asset('js/app.js') }}" defer></script>
-    <link href="{{ secure_asset('css/app.css') }} rel="stylesheet"> 
-    </head>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+</head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
