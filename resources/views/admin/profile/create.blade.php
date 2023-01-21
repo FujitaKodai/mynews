@@ -12,7 +12,7 @@
                     
                     @if (count($errors) > 0)
                         <ul>
-                            @foreach($error->all() as $e)
+                            @foreach($errors->all() as $e)
                             <li>{{ $e }}</li>
                             @endforeach
                         </ul>
@@ -21,25 +21,25 @@
                     <div class = "form-group row"> 
                         <label class = "col-md-2">氏名(name)</label>
                         <div class = "col-md-10">
-                            <input type = "text" class = "form-control" name = "title" value = "{{ old('title') }}">
+                            <input type = "text" class = "form-control" name = "name" value = "{{ old('name') }}">
                         </div>
                     </div>
                     <div class = "form-group row">
                         <label class = "col-md-2">性別(gender)</label>
                         <div class = "col-md-10">
-                            <input type = "text" class = "form-control" name = "title" value = "{{ old('title') }}">
+                            <input type = "text" class = "form-control" name = "gender" value = "{{ old('gender') }}">
                         </div>
                     </div>
                     <div class = "form-group row">
                         <label class = "col-md-2">趣味(hobby)</label>
                         <div class = "col-md-10">
-                            <input type = "text" class = "form-control" name = "title" value = "{{ old('title') }}">
+                            <input type = "text" class = "form-control" name = "hoddy" value = "{{ old('hobby') }}">
                         </div>
                     </div>
                       <div class = "form-group row"> 
                         <label class = "col-md-2">自己紹介(introduction)</label>
                         <div class = "col-md-10">
-                            <textarea type = "text" class = "form-control" name = "title" value = "{{ old('title') }}"></textarea>
+                            <textarea type = "text" class = "form-control" name = "introduction" rows = "15" value = "{{ old('introduction') }}"></textarea>
                         </div>
                     </div>
                     @csrf

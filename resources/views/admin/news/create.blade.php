@@ -12,7 +12,7 @@
                     
                     @if (count($errors) > 0)
                         <ul>
-                            @foreach($error->all() as $e)
+                            @foreach($errors->all() as $e)
                             <li>{{ $e }}</li>
                             @endforeach
                         </ul>
@@ -27,7 +27,7 @@
                     <div class = "form-group row">
                         <label class = "col-md-2">本文</label>
                         <div class = "col-md-10">
-                            <textarea class = "form-control" name = "title" value = "{{ old('title') }}"></textarea>
+                            <textarea class = "form-control" name = "body" rows= "20" value = "{{ old('body') }}"></textarea>
                         </div>
                     </div>
                     <div class = "form-group row">
