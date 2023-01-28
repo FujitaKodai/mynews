@@ -11,6 +11,7 @@ class Profile extends Model
         use HasFactory;
         
     protected $guared = array('id');
+    
     protected $fillable = ['id','name','gender','hoddy','introduction'];
     
     public static $rules = array(

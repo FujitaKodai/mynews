@@ -30,7 +30,7 @@ class ProfileController extends Controller
     }
     public function edit()
     {
-        return view('admin.profile.edit');
+        return redirect('admin/profile/edit');
     }
     public function update(Request $request)
     {
