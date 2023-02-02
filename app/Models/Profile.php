@@ -12,12 +12,12 @@ class Profile extends Model
         
     protected $guared = array('id');
     
-    protected $fillable = ['id','name','gender','hoddy','introduction'];
+    protected $fillable = ['id','name','gender','hobby','introduction'];
     
     public static $rules = array(
         'name' => 'required',
         'gender' => 'required',
-        'hoddy' => 'required',
+        'hobby' => 'required',
         'introduction' => 'required',
         );
 }

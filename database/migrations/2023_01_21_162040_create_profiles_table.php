@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name'); //プロフィールに入力された名前を保存するカラム
             $table->string('gender'); //プロフィールに入力された性別を保存するカラム
-            $table->string('hoddy'); //プロフィールに入力された趣味を保存するカラム
+            $table->string('hobby'); //プロフィールに入力された趣味を保存するカラム
             $table->string('introduction'); //プロフィールに入力された自己紹介を保存するカラム
             $table->timestamps();
         });

@@ -33,7 +33,7 @@
                     <div class = "form-group row">
                         <label class = "col-md-2">趣味(hobby)</label>
                         <div class = "col-md-10">
-                            <input type = "text" class = "form-control" name = "hoddy" value = "{{ old('hobby') }}">
+                            <input type = "text" class = "form-control" name = "hobby" value = "{{ old('hobby') }}">
                         </div>
                     </div>
                       <div class = "form-group row"> 
